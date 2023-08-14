@@ -1,38 +1,77 @@
 .App {
-  text-align: center;
+  background-color: rgba(115, 142, 150, 0.926);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  /* margin-top: 200px; */
+  color: rgb(33, 33, 192);
+}
+.heads .Link{
+  text-decoration: none;
   color: white;
+  padding: 10px 20px;
+  background-color: rgb(33, 33, 192);
+  border-radius: 10px;
+  margin-top: 30px;
+
+}
+.infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* margin-top: 200px; */
+  color: rgb(33, 33, 192);
 }
 
-.App-link {
-  color: #61dafb;
+.infos .heads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(216, 220, 222);
+  border-radius: 5px;
+  width: 50%;
+  height: 550px;
+  box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.17);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.forma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(216, 220, 222);
+  border-radius: 5px;
+  width: 50%;
+  height: 550px;
+  box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.17);
+}
+
+.forma input {
+  padding: 10px 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 10px;
+  width: 50%;
+  opacity: 0.7;
+  outline: none;
+
+}
+
+.forma button {
+  padding: 10px 30px;
+  border: none;
+  background-color: rgb(33, 33, 192);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
