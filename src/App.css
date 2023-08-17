@@ -1,38 +1,212 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+body{
+  background-color: #F8F8F8;
+}
+.signUpContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* border: 1px solid #6A4C2F; */
+  border-radius: 5px;
+  width: 40%;
+  margin: 150px auto;
+  font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.signUpContainer img{
+  width: 6rem;
+  margin-top: 30px;
+}
+.signUpContainer h1{
+  color: #6A4C2F;
+  font-weight: 400;
+
+}
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: left;
+  margin-bottom: 60px;
+
+}
+.formContainer label{
+  padding-top: 20px;
+}
+.formContainer div{
+  /* border: 1px solid rgb(0, 47, 255); */
+  padding-top: 10px;
+  width: 100%;
+}
+.formContainer button{
+  margin-top: 30px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  background-color: #6A4C2F;
+  color: white;
+  border-radius: 5px;
+}
+.formContainer button:hover{
+  background-color: #573d25;
+}
+.formContainer div input{
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+.patientFormContainer{
+  /* border: 1px solid rgb(40, 40, 41); */
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  border-radius: 5px;
+  margin: 0px auto;
+  margin-top: 100px;
+  font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.centered{
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.patientInputsContainer{
+  /* border: 1px solid rgb(255, 225, 0); */
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  text-align: left;
+  margin-bottom: 60px;
+}
+.patientInputsContainer label{
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+.patientInputsContainer div{
+  padding-top: 10px;
+  width: 100%;
+}
+.patientInputsContainer button{
+  margin-top: 30px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  background-color: #6A4C2F;
+  color: white;
+  border-radius: 5px;
+}
+.patientInputsContainer button:hover{
+  background-color: #6A4C2F;
+  color: white;
+}
+.patientInputsContainer div input, .patientInputsContainer div select{
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.btnContainer{
+  display: flex;
+  justify-content: space-around;
+}
+.btnContainer button{
+  width: 40%;
+  border: none;
+}
+.btnContainer .clearBtn{
+  background-color: #fff8eb;
+  color: #6A4C2F;
+}
+.userContainer{
+  color: #6A4C2F;
+  font-weight: 600;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  margin-top: 50px;
+}
+.userContainer img{
+  width: 10rem;
+}
+
+.patientInfoContainer{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0px auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.infoContainer, .afterClickCOntainer{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: 1px solid #6A4C2F;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.afterClickCOntainer{
+  background-color: #fff8eb;
+  margin-top: 0px;
+  border: none;
+}
+.infoContainer button{
+  background-color: #6A4C2F;
   color: white;
+  padding: 10px;
+  font-size: .9rem;
+  border: none;
+  height: 60%;
 }
-
-.App-link {
-  color: #61dafb;
+.infoTitle{
+  text-align: left;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.infoTitle h5{
+  color: #6A4C2F;
+}
+@media only screen and (max-width: 1000px) {
+  .signUpContainer, .patientFormContainer{
+    width: 60%;
   }
-  to {
-    transform: rotate(360deg);
+  .patientInfoContainer{
+    width: 100%;
+  }
+  .afterClickCOntainer{
+    font-size: .9rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .signUpContainer, .patientFormContainer{
+    width: 80%;
+  }
+  .patientFormContainer h1{
+    font-size: 1.7rem;
+  }
+  .afterClickCOntainer{
+    font-size: .7rem;
+  }
+  .infoContainer{
+    font-size: .7rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .signUpContainer, .patientFormContainer{
+    width: 90%;
+  }
+  .afterClickCOntainer{
+    font-size: .6rem;
   }
 }
