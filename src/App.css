@@ -1,38 +1,90 @@
-.App {
+
+body{
+  padding: 0;
+  margin: 0;
+  color: #494848;
+  background-color: antiquewhite;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.signUp{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 1px 1px #ccc;
+  background-color: rgba(245, 250, 254, 0.655);
+  width: 55vw;
+  margin: auto;
+  margin-top: 18vh;
+  padding-bottom: 18vh;
+}
+.signUp h1{
   text-align: center;
+  margin: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputs{
+  width: 100%;
+  margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputs form{
+  width: 70%;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.inputs input{
+  height: 30px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 1px 1px #ccc;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputs input[type='submit']{
+  border: 1px solid #ccc;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #494848;
+  font-weight: bold;
+  background-color: aliceblue;
+  height: 40px;
+}
+.inputs input[type='submit']:hover{
+  background-color: transparent;
+}
+.back{
+  margin-top: 20px;
+  display: inline-flex;
+}
+.back-link{
+  margin-left: 10px;
+  color: rgb(2, 145, 149);
+  text-decoration: none;
+}
+.back-link:hover{
+  color: cadetblue;
+}
+.forget{
+  margin-top: 20px;
+}
+.forget-password{
+  color: rgb(2, 145, 149);
+  text-decoration: none;
+}
+.profile{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 1px 1px #ccc;
+  background-color: rgba(245, 250, 254, 0.655);
+  width: 55vw;
+  height: max-content;
+  margin: auto;
+  margin-top: 18vh;
+  padding: 5vw;
+  padding-bottom: 18vh;
+  display: flex;
+}
+.profile .img{
+  background-image: url('../public/profile.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+  height: 200px;
 }
