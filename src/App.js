@@ -1,5 +1,11 @@
+import './App.css';
+
+import FuseBox from './components/Router';
+
 function App() {
-  return <div>Login App</div>;
+  return (
+    <FuseBox />
+  );
 }
 
 export default App;
